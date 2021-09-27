@@ -5,5 +5,5 @@ class Solution:
         for i, num in enumerate(nums):
             if target - num in hashtable:
                 return [hashtable[target - num], i]
-            hashtable[num[i]] = i
+            hashtable[nums[i]] = i
         return []
